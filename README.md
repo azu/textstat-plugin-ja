@@ -6,7 +6,7 @@ A japanese plugin for [azu/textstat](https://github.com/azu/textstat "azu/textst
 
 ## Installation
 
-    $ npm install textstat-plugin-ja textstat -D
+    $ npm install textstat-plugin-ja textstat -g
 
 ## Usage
 
