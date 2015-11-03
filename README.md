@@ -6,11 +6,11 @@ A japanese plugin for [azu/textstat](https://github.com/azu/textstat "azu/textst
 
 ## Installation
 
-    npm install textstat-plugin-ja textstat -D
+    $ npm install textstat-plugin-ja textstat -D
 
 ## Usage
 
-    textstat --plugin ja README.md
+    $ textstat --plugin ja README.md
     
 `--plugin ja` と指定する事で読み込まれます。
 
@@ -25,7 +25,7 @@ A japanese plugin for [azu/textstat](https://github.com/azu/textstat "azu/textst
 }
 ```
 
-    textstat README.md
+    $ textstat README.md
 
 ## Rules
 
