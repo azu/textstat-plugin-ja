@@ -1,0 +1,40 @@
+{
+  "name": "textstat-plugin-ja",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azu/textstat-plugin-ja.git"
+  },
+  "author": "azu",
+  "email": "azuciao@gmail.com",
+  "homepage": "https://github.com/azu/textstat-plugin-ja",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/azu/textstat-plugin-ja/issues"
+  },
+  "version": "1.0.0",
+  "description": "textstat plugin for japanese.",
+  "main": "lib/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "babel src --out-dir lib --source-maps",
+    "watch": "babel src --out-dir lib --watch --source-maps",
+    "prepublish": "npm run --if-present build",
+    "test": "mocha"
+  },
+  "keywords": [
+    "textstat",
+    "plugin"
+  ],
+  "dependencies": {
+    "textlint-rule-helper": "^1.1.4"
+  },
+  "devDependencies": {
+    "babel": "^5.8.29",
+    "espower-babel": "^3.3.0",
+    "mocha": "^2.3.3",
+    "power-assert": "^1.1.0",
+    "textlint-tester": "^0.2.1"
+  }
+}
