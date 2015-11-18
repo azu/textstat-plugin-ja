@@ -1,23 +1,19 @@
 // LICENSE : MIT
 "use strict";
 import {TextLintCore} from "textlint";
-import rule from "../src/rules/share-of-char-type";
+import rule from "../src/rules/ranking-meishi";
 import assert from "power-assert"
-describe("share-of-char-type", function () {
+describe("ranking-meishi", function () {
     it("should data", function () {
         let textlint = new TextLintCore();
         textlint.setupRules({
             "share-of-char-type": rule
         });
-        return textlint.lintText("あaア亜あaア亜").then(results => {
+        return textlint.lintText("名前").then(results => {
             assert(results.messages.length == 1);
             var message = results.messages[0];
             assert.deepEqual(message.data, {
-                "title": "文字種",
-                "ひらがな": "25%",
-                "カタカナ": "25%",
-                "漢字": "25%",
-                "アルファベット": "25%"
+                '名詞 Top 10': '名前: 1'
             });
         });
     });
