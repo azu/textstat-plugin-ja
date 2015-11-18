@@ -32,6 +32,7 @@
     "plugin"
   ],
   "dependencies": {
+    "kuromojin": "^1.0.1",
     "textlint-rule-helper": "^1.1.4"
   },
   "devDependencies": {
@@ -39,6 +40,6 @@
     "espower-babel": "^3.3.0",
     "mocha": "^2.3.3",
     "power-assert": "^1.1.0",
-    "textlint": "^4.7.4"
+    "textlint": "^5.0.0"
   }
 }
